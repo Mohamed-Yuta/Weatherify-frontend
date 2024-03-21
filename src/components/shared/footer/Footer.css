@@ -1,0 +1,25 @@
+footer {
+    background-color: purple;
+    /*olor: var(--main-text-color);*/
+    color: var(--blue-violet);
+    position: relative;
+    margin-top: 100px;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--main-text-color);
+    
+}
+footer i {
+    color: var(--blue-violet);
+}
+.title {
+    color: #7c3bed ;
+}
+.spec {
+    margin-top: 40px;
+}
+.someSpace{
+    margin-right: 7px;
+}

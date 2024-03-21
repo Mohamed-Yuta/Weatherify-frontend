@@ -1,193 +1,175 @@
-import React from 'react';
-import {
-  MDBFooter,
-  MDBContainer,
-  MDBIcon,
-  MDBInput,
-  MDBCol,
-  MDBRow,
-  MDBBtn
-} from 'mdb-react-ui-kit';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faInstagram, faFacebook, faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
+import './Footer.css';
 
-export default function App() {
+
+function Footer() {
+  const year = new Date().getFullYear();
+  
   return (
-    <MDBFooter className='text-center' color='white' bgColor='dark'>
-      <MDBContainer className='p-4'>
-        <section className='mb-4'>
-          <MDBBtn outline color="light" floating className='m-1' href='#!' role='button'>
-            <MDBIcon fab icon='facebook-f' />
-          </MDBBtn>
+    <footer className="container-fluid">
+      <div className="footer-top row row-cols-1 row-cols-sm-2 row-cols-md-4 p-3 p-sm-5 text-light">
+        <div className="col  mb-3 d-flex flex-column align-items-center">
+          <img  width="80" alt="WEATHERIFY"className='spec' />
+          <img  width="126" alt="WEATHERIFY Text" />
+        </div>
+        
+        <div className="col mb-3 sm-6 ">
+          <ul className="nav flex-column align-items-center ">
+            <li className="mb-2">
+            <h5  className="title">Social media</h5>
+            </li>
+            <div>
+              <li className="nav-item mb-2">
+                <a
+                  target="_blank"
+                  href="#"
+                  className="nav-link p-0 text-light"
+                >
+                  <i className="bi bi-chevron-right"></i> Website
+                </a>
+              </li>
+              <li className="nav-item mb-2">
+                <a
+                  target="_blank"
+                  href="#"
+                  className="nav-link p-0 text-light"
+                >
+                  <i className="bi bi-chevron-right"></i> Facebook
+                </a>
+              </li>
+              <li className="nav-item mb-2">
+                <a
+                  target="_blank"
+                  href="#"
+                  className="nav-link p-0 text-light"
+                >
+                  <i className="bi bi-chevron-right"></i> LinkedIn
+                </a>
+              </li>
+            
+              <li className="nav-item mb-2">
+                <a
+                  target="_blank"
+                  href="#"
+                  className="nav-link p-0 text-light"
+                >
+                  <i className="bi bi-chevron-right"></i> Instagram
+                </a>
+              </li>
+            </div>
+          </ul>
+        </div>
 
-          <MDBBtn outline color="light" floating className='m-1' href='#!' role='button'>
-            <MDBIcon fab icon='twitter' />
-          </MDBBtn>
-
-          <MDBBtn outline color="light" floating className='m-1' href='#!' role='button'>
-            <MDBIcon fab icon='google' />
-          </MDBBtn>
-
-          <MDBBtn outline color="light" floating className='m-1' href='#!' role='button'>
-            <MDBIcon fab icon='instagram' />
-          </MDBBtn>
-
-          <MDBBtn outline color="light" floating className='m-1' href='#!' role='button'>
-            <MDBIcon fab icon='linkedin-in' />
-          </MDBBtn>
-
-          <MDBBtn outline color="light" floating className='m-1' href='#!' role='button'>
-            <MDBIcon fab icon='github' />
-          </MDBBtn>
-        </section>
-
-        <section className=''>
-          <form action=''>
-            <MDBRow className='d-flex justify-content-center'>
-              <MDBCol size="auto">
-                <p className='pt-2'>
-                  <strong>Sign up for our newsletter</strong>
-                </p>
-              </MDBCol>
-
-              <MDBCol md='5' start>
-                <MDBInput contrast type='email' label='Email address' className='mb-4' />
-              </MDBCol>
-
-              <MDBCol size="auto">
-                <MDBBtn outline color='light' type='submit' className='mb-4'>
-                  Subscribe
-                </MDBBtn>
-              </MDBCol>
-            </MDBRow>
-          </form>
-        </section>
-
-        <section className='mb-4'>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio earum repellat quaerat
-            voluptatibus placeat nam, commodi optio pariatur est quia magnam eum harum corrupti dicta, aliquam
-            sequi voluptate quas.
-          </p>
-        </section>
-
-        <section className=''>
-          <MDBRow>
-            <MDBCol lg='3' md='6' className='mb-4 mb-md-0'>
-              <h5 className='text-uppercase'>Links</h5>
-
-              <ul className='list-unstyled mb-0'>
-                <li>
-                  <a href='#!' className='text-white'>
-                    Link 1
-                  </a>
-                </li>
-                <li>
-                  <a href='#!' className='text-white'>
-                    Link 2
-                  </a>
-                </li>
-                <li>
-                  <a href='#!' className='text-white'>
-                    Link 3
-                  </a>
-                </li>
-                <li>
-                  <a href='#!' className='text-white'>
-                    Link 4
-                  </a>
-                </li>
-              </ul>
-            </MDBCol>
-
-            <MDBCol lg='3' md='6' className='mb-4 mb-md-0'>
-              <h5 className='text-uppercase'>Links</h5>
-
-              <ul className='list-unstyled mb-0'>
-                <li>
-                  <a href='#!' className='text-white'>
-                    Link 1
-                  </a>
-                </li>
-                <li>
-                  <a href='#!' className='text-white'>
-                    Link 2
-                  </a>
-                </li>
-                <li>
-                  <a href='#!' className='text-white'>
-                    Link 3
-                  </a>
-                </li>
-                <li>
-                  <a href='#!' className='text-white'>
-                    Link 4
-                  </a>
-                </li>
-              </ul>
-            </MDBCol>
-
-            <MDBCol lg='3' md='6' className='mb-4 mb-md-0'>
-              <h5 className='text-uppercase'>Links</h5>
-
-              <ul className='list-unstyled mb-0'>
-                <li>
-                  <a href='#!' className='text-white'>
-                    Link 1
-                  </a>
-                </li>
-                <li>
-                  <a href='#!' className='text-white'>
-                    Link 2
-                  </a>
-                </li>
-                <li>
-                  <a href='#!' className='text-white'>
-                    Link 3
-                  </a>
-                </li>
-                <li>
-                  <a href='#!' className='text-white'>
-                    Link 4
-                  </a>
-                </li>
-              </ul>
-            </MDBCol>
-
-            <MDBCol lg='3' md='6' className='mb-4 mb-md-0'>
-              <h5 className='text-uppercase'>Links</h5>
-
-              <ul className='list-unstyled mb-0'>
-                <li>
-                  <a href='#!' className='text-white'>
-                    Link 1
-                  </a>
-                </li>
-                <li>
-                  <a href='#!' className='text-white'>
-                    Link 2
-                  </a>
-                </li>
-                <li>
-                  <a href='#!' className='text-white'>
-                    Link 3
-                  </a>
-                </li>
-                <li>
-                  <a href='#!' className='text-white'>
-                    Link 4
-                  </a>
-                </li>
-              </ul>
-            </MDBCol>
-          </MDBRow>
-        </section>
-      </MDBContainer>
-
-      <div className='text-center p-3' style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
-        © 2020 Copyright:
-        <a className='text-white' href='https://mdbootstrap.com/'>
-          MDBootstrap.com
-        </a>
+        <div className="col mb-3 sm-6 " >
+          <ul className="nav flex-column align-items-center">
+            <li className="mb-2">
+              <h5 className="title">Useful links</h5>
+            </li>
+            <div style={{ marginLeft: '40px' }} >
+              <li className="nav-item mb-2">
+                <a
+                  target="_blank"
+                  href="/about"
+                  className="nav-link p-0 text-light"
+                >
+                  <i className="bi bi-chevron-right"></i> About
+                </a>
+              </li>
+              <li className="nav-item mb-2">
+                <a
+                  target="_blank"
+                  href="#"
+                  className="nav-link p-0 text-light"
+                >
+                  <i className="bi bi-chevron-right"></i> Technical design
+                </a>
+              </li>
+              <li className="nav-item mb-2">
+                <a
+                  target="_blank"
+                  href="/blogs"
+                  className="nav-link p-0 text-light"
+                >
+                  <i className="bi bi-chevron-right"></i> Blogs
+                </a>
+              </li>
+              <li className="nav-item mb-2">
+                <a
+                  target="_blank"
+                  href="/courses"
+                  className="nav-link p-0 text-light"
+                >
+                  <i className="bi bi-chevron-right"></i> Courses
+                </a>
+              </li>
+            </div>
+          </ul>
+        </div>
+        <div className="col mb-3 sm-6">
+          <ul className="nav flex-column align-items-center">
+            <li className="mb-2">
+              <h5 className='title'>Follow us</h5>
+            </li>
+            <li className="nav-item mb-3 d-flex justify-content-center align-items-center gap-2 ">
+              <a
+                target="_blank"
+                href="#"
+                className="nav-link p-0 text-light someSpace "
+              >
+                <FontAwesomeIcon icon={faInstagram} style={{ fontSize: "40px" }} />
+              </a>
+              <a
+                target="_blank"
+                href="#"
+                className="nav-link p-0 text-light someSpace "
+              >
+                <FontAwesomeIcon icon={faFacebook} style={{ fontSize: "40px" }} />
+              </a>
+              <a
+                target="_blank"
+                href="#"
+                className="nav-link p-0 text-light someSpace"
+              >
+                <FontAwesomeIcon icon={faLinkedin} style={{ fontSize: "40px" }} />
+              </a>
+              <a
+                target="_blank"
+                href="https://github.com/Aji-ncodew"
+                className="nav-link p-0 text-light "
+              >
+                <FontAwesomeIcon icon={faGithub} style={{ fontSize: "40px" }} />
+              </a>
+            </li>
+            <li className="mb-2">
+              <h5 className='title'>Contact Details</h5>
+            </li>
+            <li className="nav-item mb-2">
+              <a href="mailto:ajincodew@gmail.com">
+                <i className="bi bi-envelope-at"></i> ajincodew@gmail.com
+              </a>
+            </li>
+            <li className="nav-item mb-2">
+              <a href="tel:+212684134782">
+                <i className="bi bi-telephone"></i> +212 6 84 13 47 82
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </MDBFooter>
+
+      <div className="footer-bottom text-light">
+        <div className="social-icons">
+          {/* Add social media icons as needed */}
+        </div>
+        <div className="copyright d-flex justify-content-center align-items-center py-4 border-top border-dark">
+          <p className="mt-2 text-center">
+            &copy; {year} Weatherify <i className="bi bi-heart-fill"></i> All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
   );
 }
+
+export default Footer;
